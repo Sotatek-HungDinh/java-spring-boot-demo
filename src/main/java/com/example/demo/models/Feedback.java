@@ -18,6 +18,10 @@ public class Feedback {
     super();
   }
 
+  // cái này không gán thẳng được nên muốn lấy ra thì sẽ phải dùng hàm getter, setter
+
+  // vd: muốn lấy trường description -> getDescripton()
+  // muốn update description -> setDescription(String description)
   public String getDescription() {
     return description;
   }

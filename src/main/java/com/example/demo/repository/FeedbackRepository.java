@@ -9,6 +9,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 @Repository
+// JpaRepository đã có 1 số hàm nó support sẵn kiểu findOne, findAll nên không cần viết thêm. Chỉ cần extend dùng luôn
 public interface FeedbackRepository extends JpaRepository<Feedback, Integer> {
   // Page<Feedback> findAll(Pageable pageable);
 }
