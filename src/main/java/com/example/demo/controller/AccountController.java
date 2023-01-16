@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.interfaces.AccountInterfaces.TestResponse;
 import com.example.demo.models.Account;
 import com.example.demo.service.AccountService;
 
@@ -20,7 +21,7 @@ public class AccountController {
   private AccountService accountService;
 
   @GetMapping
-  public List<Account> findAllAccount() {
+  public List<TestResponse> findAllAccount() {
     try {
       return accountService.findAllAccounts();
     } catch (Exception e) {
