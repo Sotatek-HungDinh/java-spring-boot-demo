@@ -71,6 +71,9 @@ public class Account {
   @JoinColumn(name = "id")
   private AccountBank accountBank;
 
+  public Account(String parameter, String parameter2) {
+  }
+
   public String getAccountNumber() {
     return accountNumber;
   }
