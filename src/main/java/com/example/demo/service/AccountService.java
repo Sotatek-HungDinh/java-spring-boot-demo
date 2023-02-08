@@ -21,6 +21,6 @@ public class AccountService {
   }
 
   public Optional<Account> findOne(int id) {
-    return accountRepository.findById(id);
+    return accountRepository.finBankById(id);
   }
 }
